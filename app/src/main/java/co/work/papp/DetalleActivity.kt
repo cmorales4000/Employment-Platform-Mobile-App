@@ -42,7 +42,7 @@ class DetalleActivity : AppCompatActivity() {
         var imagen_detalle = findViewById<ImageView>(R.id.imagen_detalle)
         var imagebox =findViewById<ImageView>(R.id.profileimage)
         val empresa = findViewById<TextView>(R.id.empresa_detalle)
-        val upload = findViewById<Button>(R.id.upload)
+        val upload = findViewById<Button>(R.id.uploadimage)
 
 
         val url = "http://192.168.1.2:8000"

@@ -39,7 +39,6 @@ class LobbyActivity : AppCompatActivity(), OnItemClickListener {
         setContentView(R.layout.activity_lobby)
 
 
-
         val lista =findViewById<RecyclerView>(R.id.lista)
         val search = findViewById<Button>(R.id.search)
         val aProfile = Intent(this, ProfileActivity::class.java)
@@ -47,7 +46,6 @@ class LobbyActivity : AppCompatActivity(), OnItemClickListener {
 
         perfilBut.setOnClickListener { startActivity(aProfile) }
         search.setOnClickListener { getMyDataBusqueda() }
-
 
 
         val primercampoarea = "Areas"

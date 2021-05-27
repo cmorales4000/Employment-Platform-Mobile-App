@@ -1,10 +1,12 @@
 package co.work
 
 
+import android.net.Uri
 import co.work.papp.data.ApplyData
 import co.work.papp.data.LoginData
 import co.work.papp.data.PostData
 import co.work.papp.data.UserData
+import okhttp3.MultipartBody
 import retrofit2.Call
 import retrofit2.http.*
 
@@ -33,6 +35,15 @@ interface PostApi {
     @GET("api/loguser/")
     fun loguser(@Query("username") username: String?): Call<List<Map<String, Any>>>
 
+
+    //Experimental
+    @Multipart
+    @PUT("api/usuarios/{id}/")
+    fun update2(
+        @Path("id") id: Int,
+        @Part imagen: Part,
+        @Body Data3: UserData
+    ): Call<Map<String, Any>>
 
     @Headers("Content-Type: application/json")
     @PUT("api/usuarios/{id}/")

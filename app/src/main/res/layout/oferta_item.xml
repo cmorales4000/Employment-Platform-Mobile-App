@@ -10,7 +10,6 @@
     android:layout_height="match_parent">
 
 
-
     <TextView
         android:id="@+id/titulo"
         android:layout_width="0dp"
@@ -18,10 +17,10 @@
         android:layout_marginStart="28dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="28dp"
-        android:textStyle="bold"
-        android:text="titulo"
-        android:textSize="24sp"
         android:gravity="center"
+        android:text="Titulo"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -32,7 +31,7 @@
         android:layout_height="40dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="14dp"
-        android:text="Bucaramanga"
+        android:text="Ciudad"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titulo" />
@@ -43,7 +42,7 @@
         android:layout_height="40dp"
         android:layout_marginStart="28dp"
         android:layout_marginBottom="10dp"
-        android:text="1.000.000"
+        android:text="0.000.000"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
